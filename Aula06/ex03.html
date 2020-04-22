@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro Exemplo</title>
     <style>
+        /* Comentario em CSS */
         body{
             background-color: burlywood;
             color: dimgrey;
@@ -16,14 +17,15 @@
     </style>
 </head>
 <body>
+    <!-- Comentario em HTML -->
     <h1>Hello World!</h1>
     <p>Texto Texto Texto</p>
     <script>
-        //Cometario
-        /* Comentario multiplas linhas */
-        window.alert("Mensagem Olá");
-        window.confirm("Continuar?");
-        window.prompt("Digite algo?");
+        //var number1 = Number.parseInt(window.prompt("Digite um numero: "));
+        var number1 = Number(window.prompt("Digite um numero: "));
+        var number2 = Number(window.prompt("Digite outro numero: "));
+        var soma = number1 + number2;
+        window.alert("A soma do entre é: " + soma);
     </script>
 </body>
 </html>
