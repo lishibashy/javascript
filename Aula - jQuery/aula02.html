@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Seletores</title>
+</head>
+<body>
+    
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li>Uno</li>
+            <li>Pailo</li>
+            <li>Onix</li>
+            <li>Fox</li>
+            <li>Fiesta</li>
+        </ul>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function()
+        {
+            $('.cars_list li:last').click(function(){
+                alert('Ok');
+            });
+           
+        });
+
+
+
+    </script>
+
+</body>
+</html>
