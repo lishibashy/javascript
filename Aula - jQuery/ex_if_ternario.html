@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do IF ternario</title>
+</head>
+<body>
+    
+    <div class="cars">
+        <h3>Carros</h3>
+        <ul class="cars_list">
+            <li>Uno</li>
+            <li>Pailo</li>
+            <li>Onix</li>
+            <li>Fox</li>
+            <li>Fiesta</li>
+        </ul>
+
+    </div>
+
+    <button type="button" id="toggle_cars">Exibir ou Ocultar Carros</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        
+        $(document).ready(function()
+        {
+          
+            $('#toggle_cars').click(function(){
+                let hiddenCars = $('.cars_list li:hidden').length;
+                //let method;
+                //Exemplo de uso do IF ternário
+                let method = (hiddenCars > 0) ? 'show' : 'hide';
+
+                //Exemplo de uso do IF de maneira convencional
+                //if (hiddenCars > 0){
+                //    method = 'show';
+                //} else {
+                //    method = 'hide';
+                //}
+
+                eval(`$('.cars_list li').${method}()`);
+
+            });
+           
+        });
+
+
+
+    </script>
+
+</body>
+</html>
